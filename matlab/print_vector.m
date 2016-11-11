@@ -6,5 +6,5 @@
 %
 
 function [] = print_vector(name, v)
-    disp(strrep([name '=[' sprintf(' %d,\n', v) ']'], ',)', ')'))
+    disp(strrep([name '= {' sprintf(' %d, ', v) '}'], ',)', ')'))
 end
