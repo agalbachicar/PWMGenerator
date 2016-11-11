@@ -1,35 +1,6 @@
-08:40:32 **** Incremental Build of configuration Debug for project ClassDAmplifier ****
+13:06:43 **** Incremental Build of configuration Debug for project ClassDAmplifier ****
 make -r all 
-Building file: ../src/app/src/appHandlers.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS -D__CODE_RED -DCORE_M3 -D__LPC17XX__ -D__REDLIB__ -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/api/adc/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/api/Timer/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/app/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Core/CM3/CoreSupport" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Core/CM3/DeviceSupport/NXP/LPC17xx" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Drivers/include" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/app/src/appHandlers.d" -MT"src/app/src/appHandlers.o" -MT"src/app/src/appHandlers.d" -o "src/app/src/appHandlers.o" "../src/app/src/appHandlers.c"
-Finished building: ../src/app/src/appHandlers.c
- 
-Building file: ../src/app/src/appInit.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS -D__CODE_RED -DCORE_M3 -D__LPC17XX__ -D__REDLIB__ -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/api/adc/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/api/Timer/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/app/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Core/CM3/CoreSupport" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Core/CM3/DeviceSupport/NXP/LPC17xx" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Drivers/include" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/app/src/appInit.d" -MT"src/app/src/appInit.o" -MT"src/app/src/appInit.d" -o "src/app/src/appInit.o" "../src/app/src/appInit.c"
-Finished building: ../src/app/src/appInit.c
- 
-Building file: ../src/app/src/main.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS -D__CODE_RED -DCORE_M3 -D__LPC17XX__ -D__REDLIB__ -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/api/adc/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/api/Timer/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/app/inc" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Core/CM3/CoreSupport" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Core/CM3/DeviceSupport/NXP/LPC17xx" -I"/home/agustin/Agustin/Dropbox/Facultad/Potencia/Proyecto/workspace/ClassDAmplifier/src/CMSISv2p00_LPC17xx/Drivers/include" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/app/src/main.d" -MT"src/app/src/main.o" -MT"src/app/src/main.d" -o "src/app/src/main.o" "../src/app/src/main.c"
-Finished building: ../src/app/src/main.c
- 
-Building target: ClassDAmplifier.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -Xlinker -Map="ClassDAmplifier.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "ClassDAmplifier_Debug.ld" -o "ClassDAmplifier.axf"  ./src/app/src/appHandlers.o ./src/app/src/appInit.o ./src/app/src/cr_startup_lpc175x_6x.o ./src/app/src/crp.o ./src/app/src/main.o  ./src/api/adc/src/adc.o  ./src/api/Timer/src/timer.o  ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_adc.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_can.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_clkpwr.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_dac.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_emac_old.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_gpdma.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_gpio.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_i2c.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_i2s.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_libcfg_default.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_mcpwm.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_nvic.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_pinsel.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_pwm.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_qei.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_rit.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_rtc.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_spi.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_ssp.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_timer.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_uart.o ./src/CMSISv2p00_LPC17xx/Drivers/source/lpc17xx_wdt.o  ./src/CMSISv2p00_LPC17xx/Core/CM3/DeviceSupport/NXP/LPC17xx/system_LPC17xx.o  ./src/CMSISv2p00_LPC17xx/Core/CM3/CoreSupport/core_cm3.o   
-Memory region         Used Size  Region Size  %age Used
-       MFlash512:       14524 B       512 KB      2.77%
-        RamLoc32:         372 B        32 KB      1.14%
-        RamAHB32:          0 GB        32 KB      0.00%
-Finished building target: ClassDAmplifier.axf
- 
-make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "ClassDAmplifier.axf"; # arm-none-eabi-objcopy -v -O binary "ClassDAmplifier.axf" "ClassDAmplifier.bin" ; # checksum -p LPC1769 -d "ClassDAmplifier.bin";
-   text	   data	    bss	    dec	    hex	filename
-  14520	      4	    368	  14892	   3a2c	ClassDAmplifier.axf
- 
+make: Nothing to be done for `all'.
 
-08:40:32 Build Finished (took 310ms)
+13:06:44 Build Finished (took 61ms)
 

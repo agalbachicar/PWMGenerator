@@ -20,7 +20,7 @@
 //!	@note	Defines
 
 
-#define	DEBUG_MODE	1
+#define	DEBUG_MODE	0
 
 #define	OUTPUT_PORT_A	0
 #define	OUTPUT_PIN_A	0
