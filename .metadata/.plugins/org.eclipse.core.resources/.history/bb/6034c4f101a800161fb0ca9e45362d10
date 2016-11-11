@@ -1,0 +1,35 @@
+/**
+ * @author		Agustin Alba Chicar
+ * @author		Maximiliano Vega
+ * @file		appHandlers.c
+ * @brief		This file has the API to handler drivers and application interruptions
+ * @date		September, 2016
+ * @version		1.0
+ * @todo
+ * @bug
+ */
+
+/**
+ * @note Includes
+ */
+#include "appHandlers.h"
+
+/**
+ * @note Public variables
+ */
+
+/**
+ * @note Private Variables
+ */
+
+
+/**
+ * @note Public functions
+ */
+
+void appADCEndOfConversionHandler(adcEChannel channelId, uint32_t value){
+	printf("%d: %d\n", channelId, value);
+}
+/**
+ * @note Private functions
+ */

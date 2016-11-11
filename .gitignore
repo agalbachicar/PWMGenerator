@@ -1,0 +1,6 @@
+#Eclipse files
+.workspace/
+ClassDAmplifier/Debug/
+ClassDAmplifier/.settings/
+ClassDAmplifier/.cproject
+ClassDAmplifier/.project
