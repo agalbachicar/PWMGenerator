@@ -48,8 +48,6 @@ void appADCEndOfConversionHandler(adcEChannel channelId, uint32_t value){
 	if(i >= MODULATION_SAMPLES){
 		i = 0;
 	}
-
-	printf("%d: %d\n", channelId, value);
 }
 /**
  * @note Private functions
