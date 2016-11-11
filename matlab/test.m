@@ -77,5 +77,5 @@ title('Espectros');
 
 
 
-print_vector('x_mod',x_mod);
-print_vector('x_in',x_in);
+print_vector('x_mod', uint32(x_mod));
+print_vector('x_in',uint32(x_in));
