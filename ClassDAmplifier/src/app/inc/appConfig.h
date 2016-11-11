@@ -20,7 +20,7 @@
 //!	@note	Defines
 
 
-#define	DEBUG_MODE	1
+#define	DEBUG_MODE	0
 
 #define	OUTPUT_PORT_A	0
 #define	OUTPUT_PIN_A	0
@@ -34,7 +34,7 @@
  * @def	ADC_FREQUENCY
  * @brief	The peripheral sampling rate
  */
-#define	ADC_FREQUENCY			4000
+#define	ADC_FREQUENCY			13000000
 
 #define	MODULATION_SAMPLES	5
 
