@@ -6,7 +6,7 @@ format long g;
 
 f_sampling = 200000;
 f_mod = 50000;
-f_in = 1000;
+f_in = 4000;
 N = 256;
 A_mod = 4095;
 A_in = 1000;
@@ -40,24 +40,31 @@ Y = 1/max(Y) .* Y;
 
 
 figure;
-stem(t, x_mod, 'b')
+stem(t, x_mod, 'b');
 hold on;
 stem(t, x_in, 'r');
 stem(t, y, 'g');
 grid;
 hold off;
-legend('Señal de modulacion', 'Señal de entrada');
+legend('Señal de modulacion', 'Señal de entrada', 'Señal de salida');
 title('Señal de control y señal de entrada');
 
 figure;
-plot(t, x_mod, 'b')
-hold on;
-plot(t, x_in, 'r');
-plot(t, y, 'g');
+subplot(311);
+stem(t, x_mod, 'b');
+ylabel('Señal de control');
 grid;
-hold off;
-legend('Señal de modulacion', 'Señal de entrada', 'Señal de salida');
-title('Señal de control y señal de entrada');
+subplot(312);
+stem(t, x_in, 'r');
+ylabel('Señal de referencia');
+grid;
+subplot(313);
+stem(t, y, 'g');
+ylabel('Señal de salida');
+grid;
+%legend('Señal de modulacion', 'Señal de entrada', 'Señal de salida');
+%title('Señal de control y señal de entrada');
+
 
 figure;
 plot(t, y, 'b');
